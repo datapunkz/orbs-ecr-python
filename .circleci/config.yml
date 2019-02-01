@@ -28,6 +28,7 @@ jobs:
           command: |
             virtualenv helloworld
             . helloworld/bin/activate
+            pip install --user --upgrade pip==18.0.0
             pip install --no-cache-dir -r requirements.txt
       - run:
           name: Run Tests
