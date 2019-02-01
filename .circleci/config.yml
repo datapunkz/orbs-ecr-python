@@ -27,7 +27,7 @@ jobs:
           name: Setup VirtualEnv
           command: |
             pip install --user --upgrade pip==18.0.0
-            pip install --no-cache-dir -r requirements.txt
+            pip install --user --no-cache-dir -r requirements.txt
       - run:
           name: Run Tests
           command: |
